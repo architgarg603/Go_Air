@@ -7,18 +7,11 @@ function NavHome() {
             <Link to="/">
             <i class="fa-solid fa-house"></i>
             </Link>
-            <Link to="/map">
-            <i class="fa-solid fa-location-arrow"></i>
+            <Link to="/past">
+            <i class="fa-solid fa-clock-rotate-left"></i>
 
             </Link>
-            <Link to="/nearby">
-
-            <i class="fa-solid fa-utensils"></i>
-            </Link>
-            <Link to="/info">
-
-            <i class="fa-regular fa-circle-question"></i>
-            </Link>
+           
         </div>
     )
 }
