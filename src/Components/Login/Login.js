@@ -11,7 +11,10 @@ function Login() {
             <div className={style.details}>
                 <input type='text' placeholder='Email' />
                 <input type='password' placeholder='Password' />
-                <div className={style.btn}>Login</div>
+                <Link to="/">
+
+                    <div className={style.btn}>Login</div>
+                </Link>
                 <Link to='/register     '>
                     <div className={style.nav}>Sign Up</div>
                 </Link>
