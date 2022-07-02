@@ -93,5 +93,26 @@
                 margin-right: 50px;
             }
         }
+
+        .popup{
+            width: 70%;
+            height: 150px;
+            background-color: #ff7886;
+            color: white;
+            border-radius: 20px;
+            position: absolute;
+            top: calc(50% - 75px);
+            left: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+
+            .info1{
+                font-size: x-large;
+                font-weight: bold;
+                
+            }
+        }
     }
 }

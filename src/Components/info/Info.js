@@ -23,6 +23,16 @@ function Info() {
 
                     </li>
                     <li>
+                        <div className={style.subhead}>Departure Time</div>
+                        <div className={style.info}>13:45</div>
+
+                    </li>
+                    <li>
+                        <div className={style.subhead}>Gate Number</div>
+                        <div className={style.info}>13</div>
+
+                    </li>
+                    <li>
                         <div className={style.subhead}>Rush Hours</div>
                         <div className={style.info}>
                             09:00 - 12:00

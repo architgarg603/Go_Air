@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import style from './Map.module.scss'
 import Navbar from '../Nav/Navbar'
 import air from '../../Assets/air.jpeg'
 function Map() {
+
+  const [dis, setDis] = useState("none");
+  useEffect(() => {
+    setTimeout(() => {
+      setDis("flex")
+    }, 3000);
+
+    setTimeout(() => {
+      setDis("none");
+    }, 5000);
+  }, [])
   return (
     <div className={style.wrapper}>
       <div className={style.details}>
@@ -24,7 +35,10 @@ function Map() {
           <div></div>
           <div></div>
         </div>
-        <div className={style.status}>Status : On-Time</div>
+        <div className={style.popup}  style={{ display: dis }}>
+          <div className={style.info1}>Gate Number Changed to 13</div>
+        </div>
+        <div className={style.status} >Status : On-Time</div>
       </div>
       <Navbar />
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './navbar.module.scss'
 import {Link} from 'react-router-dom'
-function Navbar() {
+function NavHome() {
     return (
         <div className={style.options}>
             <Link to="/">
@@ -23,4 +23,4 @@ function Navbar() {
     )
 }
 
-export default Navbar
+export default NavHome

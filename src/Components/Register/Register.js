@@ -12,7 +12,9 @@ function Register() {
                 <input type='text' placeholder='Name' />
                 <input type='text' placeholder='Email' />
                 <input type='password' placeholder='Password' />
-                <div className={style.btn}>Sign Up</div>
+                <Link to="/">
+                    <div className={style.btn}>Sign Up</div>
+                </Link>
                 <Link to='/login'>
                     <div className={style.nav}>Login</div>
                 </Link>
