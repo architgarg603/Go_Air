@@ -9,6 +9,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow: auto;
         .head {
             font-size: xx-large;
             font-weight: bold;

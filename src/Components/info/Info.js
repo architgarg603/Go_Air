@@ -18,10 +18,32 @@ function Info() {
                         <div className={style.info}>2.5 hrs</div>
                     </li>
                     <li>
-                        <div className={style.subhead}></div>
-                        <div className={style.info}></div>
+                        <div className={style.subhead}>Time take to clear all checkpoints</div>
+                        <div className={style.info}>56 mins</div>
 
                     </li>
+                    <li>
+                        <div className={style.subhead}>Rush Hours</div>
+                        <div className={style.info}>
+                            09:00 - 12:00
+                            <br />
+
+                            15:00 - 16:00
+                            <br />
+
+                            20:00 - 24:00
+                        
+                        </div>
+
+                    </li>
+                    
+                    <li>
+                        <div className={style.subhead}>Tempreture</div>
+                        <div className={style.info}>23 Degree</div>
+
+                    </li>
+                    
+                    
                 </ul>
 
 

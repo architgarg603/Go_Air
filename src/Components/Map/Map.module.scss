@@ -1,0 +1,97 @@
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    .details {
+        height: 92vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+        position: relative;
+
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+
+        .timeline{
+            height: 50%;
+            width: 8px;
+            border-radius: 15px;
+            background-color: #ff7886;
+            position: absolute;
+            z-index: 5;
+            top: 30%;
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+
+            &>div{
+                background-color: #ff7886;
+                height: 25px;
+                width: 25px;
+                border-radius: 50%;
+                position: relative;
+                left: -8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-weight: bold;
+            }
+
+        }
+
+        .status{
+            position: absolute;
+            bottom: 20px;
+            width: 90%;
+            left: 5%;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            color: white;
+            padding: 0 15px;
+            font-weight: bold;
+            border-radius: 20px;
+            background-color: #ff7886;
+        }
+
+
+        .banner {
+            width: 90%;
+            padding: 20px;
+            height: 120px;
+            border-radius: 20px;
+            background-color: #ff7886;
+            display: flex;
+            color: white;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            z-index: 2;
+            .info1{
+                font-size: large;
+            }
+            .info2{
+                font-size: x-large;
+                font-weight: bold;
+            }
+
+            .arrow{
+                font-size: 35px;
+                font-weight: bold;
+                margin-right: 50px;
+            }
+        }
+    }
+}
