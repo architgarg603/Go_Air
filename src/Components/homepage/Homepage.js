@@ -3,6 +3,7 @@ import NavHome from '../NavHome/Navbar'
 import style from './Homepage.module.scss'
 import del from '../../Assets/del.jpg'
 import mum from '../../Assets/mum.jpg'
+import {Link} from 'react-router-dom'
 function Homepage() {
 
     let arr = [
@@ -13,20 +14,23 @@ function Homepage() {
         <div className={style.wrapper}>
             <div className={style.booking}>
                 <div className={style.head}>Booking</div>
-                {arr.map((data,idx) => {
+                {arr.map((data, idx) => {
                     return (
-                        <div className={style.card} style={{borderBottom:idx==arr.length-1? "none":"1px solid gray"}}>
-                            <div className={style.info}>
-                                <div className={style.name}>{data[0]}</div>
-                                <div className={style.rank}> {data[1]} </div>
-                                <div className={style.type}>Departure Time - {data[2]}</div>
-                            </div>
-                            <div className={style.img}>
-                                <div className={style.bl}></div>
-                                <img src={data[3]} />
-                            </div>
+                        <Link to="/map">
 
-                        </div>
+                            <div className={style.card} style={{ borderBottom: idx == arr.length - 1 ? "none" : "1px solid gray" }}>
+                                <div className={style.info}>
+                                    <div className={style.name}>{data[0]}</div>
+                                    <div className={style.rank}> {data[1]} </div>
+                                    <div className={style.type}>Departure Time - {data[2]}</div>
+                                </div>
+                                <div className={style.img}>
+                                    <div className={style.bl}></div>
+                                    <img src={data[3]} />
+                                </div>
+
+                            </div>
+                        </Link>
                     )
                 })}
             </div>

@@ -6,7 +6,7 @@ import mum from '../../Assets/mum.jpg'
 import x from '../../Assets/x.jpg'
 import y from '../../Assets/y.webp'
 import z from '../../Assets/z.jpg'
-
+import { Link } from 'react-router-dom'
 
 function Past() {
 
@@ -19,20 +19,23 @@ function Past() {
         <div className={style.wrapper}>
             <div className={style.booking}>
                 <div className={style.head}>Past Booking</div>
-                {arr.map((data,idx) => {
+                {arr.map((data, idx) => {
                     return (
-                        <div className={style.card} style={{borderBottom:idx==arr.length-1? "none":"1px solid gray"}}>
-                            <div className={style.info}>
-                                <div className={style.name}>{data[0]}</div>
-                                <div className={style.rank}> {data[1]} </div>
-                                <div className={style.type}>Departure Time - {data[2]}</div>
-                            </div>
-                            <div className={style.img}>
-                                <div className={style.bl}></div>
-                                <img src={data[3]} />
-                            </div>
+                        <Link to="/map">
 
-                        </div>
+                            <div className={style.card} style={{ borderBottom: idx == arr.length - 1 ? "none" : "1px solid gray" }}>
+                                <div className={style.info}>
+                                    <div className={style.name}>{data[0]}</div>
+                                    <div className={style.rank}> {data[1]} </div>
+                                    <div className={style.type}>Departure Time - {data[2]}</div>
+                                </div>
+                                <div className={style.img}>
+                                    <div className={style.bl}></div>
+                                    <img src={data[3]} />
+                                </div>
+
+                            </div>
+                        </Link>
                     )
                 })}
             </div>
